@@ -9,6 +9,7 @@ import { setCurrentOrientation } from "nativescript-screen-orientation";
 export class AppComponent implements OnInit {
 
     constructor() {
+        // Force screen orientation on app load
         setCurrentOrientation("portrait", () => {
            console.log("Orientation changed to portrait");
         });
