@@ -14,6 +14,8 @@ registerElement("VideoPlayer", () => Video);
 export class BrowseComponent implements OnInit {
     constructor(page: Page) {
         page.on("navigatingTo", () => {
+            // Change screen orientation on video page (a fullscreen modal window should be used instead)
+            // See here: https://docs.nativescript.org/angular/core-concepts/angular-navigation#modal-view-navigation
             setCurrentOrientation("landscape", () => {
                 console.log("Orientation changed to landscape");
             });
