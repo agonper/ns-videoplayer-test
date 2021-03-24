@@ -4,6 +4,7 @@ import { Video } from "nativescript-videoplayer";
 import { setCurrentOrientation } from "nativescript-screen-orientation";
 import { Page } from "tns-core-modules/ui/page";
 
+// Register video player component
 registerElement("VideoPlayer", () => Video);
 
 @Component({
