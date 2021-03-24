@@ -20,4 +20,5 @@ A NativeScript VideoPlayer test with local video loading and very naive screen o
 ## Steps to reproduce
 - Install NativeScript CLI 6.8.0
 - Install video player 4.2.1
+- Force tns-core-modules 6.5.24 in package.json to avoid screen flashing on navigation
 - See commits for more
